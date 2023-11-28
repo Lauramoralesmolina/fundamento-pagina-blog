@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+/*fron-family: ´agbalumo´, sans-serig;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(
+        150deg,
+        rgba(204,66,225,1) 0%,
+        rgba(77,34,155,1) 16%,
+        rgba(65,32,137,1) 33%,
+        rgba(47,23,99,1) 51%,
+        rgba(31,13,65,1) 65%,
+        rgba(31,12,66,1) 100%,
+    );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    min-height: 150vh;
+}
+
+img {
+    max-width: 140%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 1 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #EE13C4;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: #EE13C4;
+}
+
+.navbar ul li a:hover {
+    color: #EE13C4;
+}
+
+#menu {
+    display: initial;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: initial;
+}
+
+.header-dontent {
+    display: flex;
+    margin-top: 150px;
+}
+
+.header-text {
+    flex-basis: 20%;
+    padding-right: 100px;
+}
+
+.header-text h1{
+    font-family: agbalumo, sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    color: mediumvioletred;
+    margin-bottom: 15;
+}
+
+.header-text p{
+    font-size: 20px;
+    color: blueviolet;
+    margin-bottom: 50;
+}
+
+.header-img {
+    flex-basis: 50%;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+    .menu label {
+        position: absolute;
+        top: 100;
+        left: 0;
+        right: 0;
+        background-color: #EE13C4;
+        display: initial;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: black;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+}
+footer{
+    width: 100%;
+    background-color: #EE13C4;
+    height: 100px;
+    padding: 15px;
+}
